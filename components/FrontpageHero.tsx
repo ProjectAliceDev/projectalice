@@ -3,6 +3,13 @@ import Link from 'next/link';
 
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
+import facepaint from 'facepaint';
+
+const breakpoints = facepaint([
+	'@media(min-width: 420px)',
+  	'@media(min-width: 768px)',
+  	'@media(min-width: 1120px)'
+])
 
 interface FrontpageHeroProps {
 	title: string
@@ -10,20 +17,21 @@ interface FrontpageHeroProps {
     callToActionText: string
     callToActionLink: string
     backgroundImageLocation?: string
+    dontShowCallToAction?: boolean
 }
 
-const frontpageHeroRootStyles = css({
+const frontpageHeroRootStyles = css(breakpoints({
 	paddingTop: 76,
 	paddingBottom: 216,
-	paddingLeft: 64,
-	paddingRight: 64,
+	paddingLeft: [32, "5%", "15%"],
+	paddingRight: [32, "5%", "15%"],
 	textAlign: "center",
 	backgroundColor: "#333",
 	color: "white",
 	backgroundPosition: "center",
 	backgroundSize: "cover",
 	backgroundRepeat: "no-repeat"
-})
+}))
 
 const frontpageHeroTitleStyles = css({
 	fontSize: '2.5em',
@@ -49,11 +57,14 @@ export const FrontpageHero: React.FC<FrontpageHeroProps> = (props) => {
 		<div css={ frontpageHeroRootStyles } style={ { backgroundImage: `url(${ props.backgroundImageLocation })`} }>
 			<h1 css={ frontpageHeroTitleStyles }>{ props.title }</h1>
 			<p css={ frontpageHeroSubtitleStyles }>{ props.subtitle }</p>
-			<Link href={ props.callToActionLink }>
-				<a css={ frontpageCallToActionStyles }>
-					{ props.callToActionText } &rsaquo;
-				</a>
-			</Link>
+			{
+				props.dontShowCallToAction? null:
+				<Link href={ props.callToActionLink }>
+					<a css={ frontpageCallToActionStyles }>
+						{ props.callToActionText } &rsaquo;
+					</a>
+				</Link>
+			}
 		</div>
 	)
 }

@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import FrontpageHero from '../components/FrontpageHero'
 import { NextPage } from 'next';
 
-import heroBg from '../assets/forgotten-hero.png';
+import heroBg from '../assets/mods/forgotten/forgotten-hero.png';
 
 const IndexPage: NextPage = () => {
   return (
@@ -11,7 +11,7 @@ const IndexPage: NextPage = () => {
       <FrontpageHero
         title="Deleted. And forgotten."
         subtitle="The new chapters of Forgotten bring suspense, surprise, and horror to the table in a whole new way."
-        callToActionText="Try the demo"
+        callToActionText="Learn more"
         callToActionLink="/mods/forgotten"
         backgroundImageLocation={ heroBg }
       />

@@ -31,6 +31,7 @@ const contentStyles = css({
   position: "relative",
   height: "100%",
   flexGrow: 4,
+  padding: 64,
 })
 
 const contentStylesNoPadding = css({
