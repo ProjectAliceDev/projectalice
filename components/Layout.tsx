@@ -1,41 +1,69 @@
 import * as React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import Navbar from './Navbar';
+import Footer from './Footer';
+
+/** @jsx jsx */
+import { css, jsx, Global } from '@emotion/core';
+
+const globalStyles = css({
+  'html, body': { 
+    width: '100%',
+    height: '100%',
+    minHeight: '100vh',
+    position: 'relative',
+    margin: 0,
+    padding: 0,
+    fontFamily: "Nunito, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
+  }
+});
+
+const mainPageStyles = css({
+  display: 'inline-flex',
+  flexDirection: 'column',
+  minHeight: "100vh",
+  height: "100%",
+  width: "100%"
+})
+
+const contentStyles = css({
+  position: "relative",
+  height: "100%",
+  flexGrow: 4,
+})
+
+const contentStylesNoPadding = css({
+  position: "relative",
+  height: "100%",
+  flexGrow: 4,
+})
 
 type Props = {
-  title?: string
+  title?: string,
+  useContentPadding?: boolean
 }
 
 const Layout: React.FunctionComponent<Props> = ({
   children,
   title = 'This is the default title',
+  useContentPadding = false
 }) => (
   <div>
+    <Global styles={ globalStyles }/>
     <Head>
-      <title>{title}</title>
+      <title>{ title } | Project Alice</title>
       <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="viewport" content="initial-scale=1.0, width=device-width, shrink-to-fit=no" />
+      <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800&display=swap" rel="stylesheet"/>
     </Head>
-    <header>
-      <nav>
-        <Link href="/">
-          <a>Home</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/about">
-          <a>About</a>
-        </Link>{' '}
-        |{' '}
-        <Link href="/initial-props">
-          <a>With Initial Props</a>
-        </Link>
-      </nav>
-    </header>
-    {children}
-    <footer>
-      <hr />
-      <span>I'm here to stay (Footer)</span>
-    </footer>
+    <div css={ mainPageStyles }>
+      <Navbar/>
+      <div id = "pa-content" css={ useContentPadding ? contentStyles: contentStylesNoPadding }>
+        {children}
+      </div>
+      <Footer/>
+    </div>
   </div>
 )
 

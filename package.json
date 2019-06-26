@@ -8,9 +8,15 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@mdi/js": "^3.7.95",
+    "@mdi/react": "^1.1.1",
+    "@types/facepaint": "^1.2.0",
     "@zeit/next-typescript": "^1.1.1",
+    "facepaint": "^1.2.1",
     "next": "^8.1.0",
     "next-compose-plugins": "^2.2.0",
+    "next-images": "^1.1.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
