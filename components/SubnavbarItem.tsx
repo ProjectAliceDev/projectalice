@@ -24,9 +24,9 @@ const subNavbarItemName = css({
 const subNavbarIcon = css({
 	position: "relative",
 	top: 8,
-	height: 56,
+	height: 48,
 	width: "auto",
-	paddingBottom: 0,
+	paddingBottom: 8,
 	marginBottom: 0
 })
 

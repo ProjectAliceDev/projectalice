@@ -4,12 +4,8 @@ import Link from 'next/link';
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 import facepaint from 'facepaint';
+import { breakpoints } from '../utils/breakpoints'
 
-const breakpoints = facepaint([
-	'@media(min-width: 420px)',
-  	'@media(min-width: 768px)',
-  	'@media(min-width: 1120px)'
-])
 
 interface FrontpageHeroProps {
 	title: string

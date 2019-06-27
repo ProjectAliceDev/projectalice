@@ -9,6 +9,7 @@ interface MiniNavbarProps {
 	buttonText: string;
 	buttonLink: string;
 	children?: any;
+	icon?: string;
 }
 
 const miniNavbarRootStyles = css({
@@ -37,6 +38,12 @@ const miniNavbarInnerRegionStyles = css({
 const miniNavbarTitleStyles = css({
 	fontWeight: 700,
 	marginTop: 12,
+})
+
+const miniNavbarLogoStyles = css({
+	height: 48,
+	width: 'auto',
+	paddingRight: 4,
 })
 
 const miniNavbarLinkStyles = css({
@@ -83,7 +90,8 @@ const MiniNavbar: FC<MiniNavbarProps> = (props) => {
 	return (
 		<div id="pa-mininavbar" css={ miniNavbarRootStyles }>
 			<div css={ miniNavbarInnerRegionStyles }>
-				<div style = { { flexGrow: 1 } }>
+				<div style = { { flexGrow: 1, display: "flex" } }>
+					{ props.icon? <img src={ props.icon } css={ miniNavbarLogoStyles }/>: null }
 					<p css={ miniNavbarTitleStyles }> { props.title } </p>
 				</div>
 				<div id="pa-mininavbar-links" css={ miniNavbarLinkStyles }>

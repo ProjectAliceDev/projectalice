@@ -6,7 +6,7 @@ import { css, jsx } from '@emotion/core';
 import facepaint from 'facepaint';
 
 interface PageHeroProps {
-	backgroundImage: string
+	backgroundImage?: string
 	title: string
 	subtitle?: string
 	showLink?: boolean

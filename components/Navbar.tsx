@@ -5,6 +5,8 @@ import Icon from '@mdi/react';
 /** @jsx jsx */
 import { css, jsx, keyframes } from '@emotion/core';
 import facepaint from 'facepaint';
+import { breakpoints } from '../utils/breakpoints'
+
 
 import logomark from '../assets/logomark.svg';
 import { 
@@ -18,12 +20,6 @@ import {
 interface NavbarState {
 	mobileMenuOpen: boolean
 }
-
-const breakpoints = facepaint([
-	'@media(min-width: 420px)',
-  	'@media(min-width: 768px)',
-  	'@media(min-width: 1120px)'
-])
 
 // MARK: Navigation bar styles
 const navbarRootStyles = css({
