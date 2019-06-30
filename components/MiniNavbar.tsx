@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
+import { breakpoints } from '../utils/breakpoints'
 
 interface MiniNavbarProps {
 	title: string;
@@ -35,10 +36,11 @@ const miniNavbarInnerRegionStyles = css({
 	paddingRight: 16,
 })
 
-const miniNavbarTitleStyles = css({
+const miniNavbarTitleStyles = css(breakpoints({
 	fontWeight: 700,
-	marginTop: 12,
-})
+	marginTop: [14, 14, 12],
+	fontSize: ["0.8em", "0.8em", "1em"]
+}))
 
 const miniNavbarLogoStyles = css({
 	height: 48,

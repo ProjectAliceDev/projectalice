@@ -3,6 +3,7 @@ import Layout from '../../components/Layout'
 import FrontpageHero from '../../components/FrontpageHero'
 import MiniNavbar from '../../components/MiniNavbar'
 import BasicCard from '../../components/BasicCard'
+import DeprecationFlag from '../../components/DeprecationFlag'
 import Link from 'next/link'
 import { NextPage } from 'next';
 
@@ -25,7 +26,7 @@ const AngelReturnsPage: NextPage = () => {
   return (
     <Layout title="The Angel Returns">
       <MiniNavbar
-        title="The Angel Returns (deprecated)"
+        title="The Angel Returns"
         icon={ tarLogo }
         buttonText="Download"
         buttonLink="https://github.com/ProjectAliceDev/the-angel-returns/releases/latest"
@@ -36,6 +37,7 @@ const AngelReturnsPage: NextPage = () => {
          <Link href="https://github.com/projectalicedev/the-angel-returns">
            <a>Source</a>
          </Link>
+         <DeprecationFlag/>
        </MiniNavbar>
       <FrontpageHero
         title="The Angel is returning."
