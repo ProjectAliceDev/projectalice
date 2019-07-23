@@ -21225,7 +21225,7 @@ var breakpoints = Object(facepaint__WEBPACK_IMPORTED_MODULE_0__["default"])(['@m
 
 /***/ }),
 
-/***/ 0:
+/***/ 2:
 /*!*********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fprojectalice%2Fpages%2F_error.tsx ***!
   \*********************************************************************************************************************************************/
@@ -21248,5 +21248,5 @@ module.exports = dll_afa7b25a60452594c240;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map
