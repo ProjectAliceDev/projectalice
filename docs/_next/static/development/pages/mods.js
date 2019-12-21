@@ -1,15 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
-
-/***/ "./assets/aliceos.jpg":
-/*!****************************!*\
-  !*** ./assets/aliceos.jpg ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/aliceos-7d99253fef63ae8c0252a4784dd61d7b.jpg";
-
-/***/ }),
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/mods.js"],{
 
 /***/ "./assets/logomark.svg":
 /*!*****************************!*\
@@ -33,6 +22,17 @@ module.exports = "/_next/static/images/forgotten-hero-c9b762ef8b36f74e86b4ebf074
 
 /***/ }),
 
+/***/ "./assets/mods/forgotten/forgotten-logo.png":
+/*!**************************************************!*\
+  !*** ./assets/mods/forgotten/forgotten-logo.png ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/forgotten-logo-303e0c4e9dd6ff9bc3da2128c2ab5ed0.png";
+
+/***/ }),
+
 /***/ "./assets/mods/tar/tar-bg.png":
 /*!************************************!*\
   !*** ./assets/mods/tar/tar-bg.png ***!
@@ -41,6 +41,28 @@ module.exports = "/_next/static/images/forgotten-hero-c9b762ef8b36f74e86b4ebf074
 /***/ (function(module, exports) {
 
 module.exports = "/_next/static/images/tar-bg-32f35d4a068af69736a93fcf2cab21af.png";
+
+/***/ }),
+
+/***/ "./assets/mods/tar/tar-logo.png":
+/*!**************************************!*\
+  !*** ./assets/mods/tar/tar-logo.png ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/tar-logo-76fd12b0b8bf80b73ef71124b4ff20c2.png";
+
+/***/ }),
+
+/***/ "./assets/policies.jpg":
+/*!*****************************!*\
+  !*** ./assets/policies.jpg ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/policies-173d37f77a8fbfa8a77fd37d5f5b4808.jpg";
 
 /***/ }),
 
@@ -1154,6 +1176,157 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Navbar);
+
+/***/ }),
+
+/***/ "./components/Subnavbar.tsx":
+/*!**********************************!*\
+  !*** ./components/Subnavbar.tsx ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
+var _jsxFileName = "/Users/marquiskurt/Developer/projectalice/components/Subnavbar.tsx";
+
+
+function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
+
+/** @jsx jsx */
+
+var subNavbarRootStyles =  false ? undefined : {
+  name: "xrem08-subNavbarRootStyles",
+  styles: "background-color:#fafafa;height:76px;text-align:center;display:flex;;label:subNavbarRootStyles;",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYXJxdWlza3VydC9EZXZlbG9wZXIvcHJvamVjdGFsaWNlL2NvbXBvbmVudHMvU3VibmF2YmFyLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFNNEIiLCJmaWxlIjoiL1VzZXJzL21hcnF1aXNrdXJ0L0RldmVsb3Blci9wcm9qZWN0YWxpY2UvY29tcG9uZW50cy9TdWJuYXZiYXIudHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IEZDIH0gZnJvbSAncmVhY3QnO1xuXG5cbi8qKiBAanN4IGpzeCAqL1xuaW1wb3J0IHsgY3NzLCBqc3ggfSBmcm9tICdAZW1vdGlvbi9jb3JlJztcblxuY29uc3Qgc3ViTmF2YmFyUm9vdFN0eWxlcyA9IGNzcyh7XG5cdGJhY2tncm91bmRDb2xvcjogXCIjZmFmYWZhXCIsXG5cdGhlaWdodDogNzYsXG5cdHRleHRBbGlnbjogXCJjZW50ZXJcIixcblx0ZGlzcGxheTogXCJmbGV4XCIsXG59KVxuXG5jb25zdCBzdWJOYXZiYXJJbm5lclJlZ2lvblN0eWxlcyA9IGNzcyh7XG5cdG1heFdpZHRoOiAxNTAwLFxuXHRtYXJnaW5MZWZ0OiBcImF1dG9cIixcblx0bWFyZ2luUmlnaHQ6IFwiYXV0b1wiLFxuXHR0ZXh0QWxpZ246IFwiY2VudGVyXCIsXG5cdGJvcmRlckJvdHRvbUNvbG9yOiBcIiM2NjZcIixcblx0Ym9yZGVyQm90dG9tV2lkdGg6IDAuMjUsXG5cdGJvcmRlckJvdHRvbVN0eWxlOiBcInNvbGlkXCIsXG5cdGRpc3BsYXk6IFwiZmxleFwiLFxuXHQnJiBkaXYnOiB7XG5cdFx0cGFkZGluZ0xlZnQ6IDE2LFxuXHRcdHBhZGRpbmdSaWdodDogMTYsXG5cdH1cbn0pXG5cbmNvbnN0IFN1Yk5hdmJhcjogRkMgPSAocHJvcHMpID0+IHtcblx0cmV0dXJuIChcblx0XHQ8ZGl2IGlkID0gXCJwYS1zdWJuYXZiYXJcIiBjc3M9eyBzdWJOYXZiYXJSb290U3R5bGVzIH0+XG5cdFx0XHQ8ZGl2IGNzcz17IHN1Yk5hdmJhcklubmVyUmVnaW9uU3R5bGVzIH0+XG5cdFx0XHRcdHsgcHJvcHMuY2hpbGRyZW4gfVxuXHRcdFx0PC9kaXY+XG5cdFx0PC9kaXY+XG5cdClcbn1cblxuZXhwb3J0IGRlZmF1bHQgU3ViTmF2YmFyIl19 */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+};
+var subNavbarInnerRegionStyles =  false ? undefined : {
+  name: "1tkg0f9-subNavbarInnerRegionStyles",
+  styles: "max-width:1500px;margin-left:auto;margin-right:auto;text-align:center;border-bottom-color:#666;border-bottom-width:0.25px;border-bottom-style:solid;display:flex;& div{padding-left:16px;padding-right:16px;};label:subNavbarInnerRegionStyles;",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYXJxdWlza3VydC9EZXZlbG9wZXIvcHJvamVjdGFsaWNlL2NvbXBvbmVudHMvU3VibmF2YmFyLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFhbUMiLCJmaWxlIjoiL1VzZXJzL21hcnF1aXNrdXJ0L0RldmVsb3Blci9wcm9qZWN0YWxpY2UvY29tcG9uZW50cy9TdWJuYXZiYXIudHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IEZDIH0gZnJvbSAncmVhY3QnO1xuXG5cbi8qKiBAanN4IGpzeCAqL1xuaW1wb3J0IHsgY3NzLCBqc3ggfSBmcm9tICdAZW1vdGlvbi9jb3JlJztcblxuY29uc3Qgc3ViTmF2YmFyUm9vdFN0eWxlcyA9IGNzcyh7XG5cdGJhY2tncm91bmRDb2xvcjogXCIjZmFmYWZhXCIsXG5cdGhlaWdodDogNzYsXG5cdHRleHRBbGlnbjogXCJjZW50ZXJcIixcblx0ZGlzcGxheTogXCJmbGV4XCIsXG59KVxuXG5jb25zdCBzdWJOYXZiYXJJbm5lclJlZ2lvblN0eWxlcyA9IGNzcyh7XG5cdG1heFdpZHRoOiAxNTAwLFxuXHRtYXJnaW5MZWZ0OiBcImF1dG9cIixcblx0bWFyZ2luUmlnaHQ6IFwiYXV0b1wiLFxuXHR0ZXh0QWxpZ246IFwiY2VudGVyXCIsXG5cdGJvcmRlckJvdHRvbUNvbG9yOiBcIiM2NjZcIixcblx0Ym9yZGVyQm90dG9tV2lkdGg6IDAuMjUsXG5cdGJvcmRlckJvdHRvbVN0eWxlOiBcInNvbGlkXCIsXG5cdGRpc3BsYXk6IFwiZmxleFwiLFxuXHQnJiBkaXYnOiB7XG5cdFx0cGFkZGluZ0xlZnQ6IDE2LFxuXHRcdHBhZGRpbmdSaWdodDogMTYsXG5cdH1cbn0pXG5cbmNvbnN0IFN1Yk5hdmJhcjogRkMgPSAocHJvcHMpID0+IHtcblx0cmV0dXJuIChcblx0XHQ8ZGl2IGlkID0gXCJwYS1zdWJuYXZiYXJcIiBjc3M9eyBzdWJOYXZiYXJSb290U3R5bGVzIH0+XG5cdFx0XHQ8ZGl2IGNzcz17IHN1Yk5hdmJhcklubmVyUmVnaW9uU3R5bGVzIH0+XG5cdFx0XHRcdHsgcHJvcHMuY2hpbGRyZW4gfVxuXHRcdFx0PC9kaXY+XG5cdFx0PC9kaXY+XG5cdClcbn1cblxuZXhwb3J0IGRlZmF1bHQgU3ViTmF2YmFyIl19 */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+};
+
+var SubNavbar = function SubNavbar(props) {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    id: "pa-subnavbar",
+    css: subNavbarRootStyles,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_1__["jsx"])("div", {
+    css: subNavbarInnerRegionStyles,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, props.children));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SubNavbar);
+
+/***/ }),
+
+/***/ "./components/SubnavbarItem.tsx":
+/*!**************************************!*\
+  !*** ./components/SubnavbarItem.tsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
+var _jsxFileName = "/Users/marquiskurt/Developer/projectalice/components/SubnavbarItem.tsx";
+
+
+function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
+
+
+/** @jsx jsx */
+
+
+var subNavbarItemName =  false ? undefined : {
+  name: "1xxedkx-subNavbarItemName",
+  styles: "text-decoration:none;color:#333;font-weight:700;font-size:0.75em;margin-top:0;padding-top:0;position:relative;bottom:8px;;label:subNavbarItemName;",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYXJxdWlza3VydC9EZXZlbG9wZXIvcHJvamVjdGFsaWNlL2NvbXBvbmVudHMvU3VibmF2YmFySXRlbS50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBWTBCIiwiZmlsZSI6Ii9Vc2Vycy9tYXJxdWlza3VydC9EZXZlbG9wZXIvcHJvamVjdGFsaWNlL2NvbXBvbmVudHMvU3VibmF2YmFySXRlbS50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHsgRkMgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5cbi8qKiBAanN4IGpzeCAqL1xuaW1wb3J0IHsgY3NzLCBqc3ggfSBmcm9tICdAZW1vdGlvbi9jb3JlJztcblxuaW50ZXJmYWNlIFN1Ym5hdmJhckl0ZW1Qcm9wcyB7XG5cdGljb246IHN0cmluZ1xuXHRuYW1lOiBzdHJpbmdcblx0bGlua3NUbzogc3RyaW5nXG59XG5cbmNvbnN0IHN1Yk5hdmJhckl0ZW1OYW1lID0gY3NzKHtcblx0dGV4dERlY29yYXRpb246IFwibm9uZVwiLFxuXHRjb2xvcjogXCIjMzMzXCIsXG5cdGZvbnRXZWlnaHQ6IDcwMCxcblx0Zm9udFNpemU6IFwiMC43NWVtXCIsXG5cdG1hcmdpblRvcDogMCxcblx0cGFkZGluZ1RvcDogMCxcblx0cG9zaXRpb246IFwicmVsYXRpdmVcIixcblx0Ym90dG9tOiA4LFxufSlcblxuY29uc3Qgc3ViTmF2YmFySWNvbiA9IGNzcyh7XG5cdHBvc2l0aW9uOiBcInJlbGF0aXZlXCIsXG5cdHRvcDogOCxcblx0aGVpZ2h0OiA0OCxcblx0d2lkdGg6IFwiYXV0b1wiLFxuXHRwYWRkaW5nQm90dG9tOiA4LFxuXHRtYXJnaW5Cb3R0b206IDBcbn0pXG5cbmNvbnN0IFN1Ym5hdmJhckl0ZW06IEZDPFN1Ym5hdmJhckl0ZW1Qcm9wcz4gPSAocHJvcHMpID0+IHtcblx0cmV0dXJuIChcblx0XHQ8ZGl2IGlkPVwicGEtc3VibmF2YmFyLWl0ZW1cIj5cblx0XHRcdDxMaW5rIGhyZWY9eyBwcm9wcy5saW5rc1RvIH0gY3NzPXsgeyB0ZXh0RGVjb3JhdGlvbjogXCJub25lXCJ9IH0+XG5cdFx0XHRcdDxhIHN0eWxlPXsge3RleHREZWNvcmF0aW9uOiBcIm5vbmVcIn0gfT5cblx0XHRcdFx0XHQ8ZGl2PlxuXHRcdFx0XHRcdFx0PGltZyBzcmM9eyBwcm9wcy5pY29uIH0gY3NzPXsgc3ViTmF2YmFySWNvbiB9Lz5cblx0XHRcdFx0XHRcdDxwIGNzcz17IHN1Yk5hdmJhckl0ZW1OYW1lIH0+eyBwcm9wcy5uYW1lIH08L3A+XG5cdFx0XHRcdFx0PC9kaXY+XG5cdFx0XHRcdDwvYT5cblx0XHRcdDwvTGluaz5cblx0XHQ8L2Rpdj5cblx0KVxufVxuXG5leHBvcnQgZGVmYXVsdCBTdWJuYXZiYXJJdGVtOyJdfQ== */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+};
+var subNavbarIcon =  false ? undefined : {
+  name: "9wo0jl-subNavbarIcon",
+  styles: "position:relative;top:8px;height:48px;width:auto;padding-bottom:8px;margin-bottom:0;;label:subNavbarIcon;",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYXJxdWlza3VydC9EZXZlbG9wZXIvcHJvamVjdGFsaWNlL2NvbXBvbmVudHMvU3VibmF2YmFySXRlbS50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBdUJzQiIsImZpbGUiOiIvVXNlcnMvbWFycXVpc2t1cnQvRGV2ZWxvcGVyL3Byb2plY3RhbGljZS9jb21wb25lbnRzL1N1Ym5hdmJhckl0ZW0udHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IEZDIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IExpbmsgZnJvbSBcIm5leHQvbGlua1wiO1xuXG4vKiogQGpzeCBqc3ggKi9cbmltcG9ydCB7IGNzcywganN4IH0gZnJvbSAnQGVtb3Rpb24vY29yZSc7XG5cbmludGVyZmFjZSBTdWJuYXZiYXJJdGVtUHJvcHMge1xuXHRpY29uOiBzdHJpbmdcblx0bmFtZTogc3RyaW5nXG5cdGxpbmtzVG86IHN0cmluZ1xufVxuXG5jb25zdCBzdWJOYXZiYXJJdGVtTmFtZSA9IGNzcyh7XG5cdHRleHREZWNvcmF0aW9uOiBcIm5vbmVcIixcblx0Y29sb3I6IFwiIzMzM1wiLFxuXHRmb250V2VpZ2h0OiA3MDAsXG5cdGZvbnRTaXplOiBcIjAuNzVlbVwiLFxuXHRtYXJnaW5Ub3A6IDAsXG5cdHBhZGRpbmdUb3A6IDAsXG5cdHBvc2l0aW9uOiBcInJlbGF0aXZlXCIsXG5cdGJvdHRvbTogOCxcbn0pXG5cbmNvbnN0IHN1Yk5hdmJhckljb24gPSBjc3Moe1xuXHRwb3NpdGlvbjogXCJyZWxhdGl2ZVwiLFxuXHR0b3A6IDgsXG5cdGhlaWdodDogNDgsXG5cdHdpZHRoOiBcImF1dG9cIixcblx0cGFkZGluZ0JvdHRvbTogOCxcblx0bWFyZ2luQm90dG9tOiAwXG59KVxuXG5jb25zdCBTdWJuYXZiYXJJdGVtOiBGQzxTdWJuYXZiYXJJdGVtUHJvcHM+ID0gKHByb3BzKSA9PiB7XG5cdHJldHVybiAoXG5cdFx0PGRpdiBpZD1cInBhLXN1Ym5hdmJhci1pdGVtXCI+XG5cdFx0XHQ8TGluayBocmVmPXsgcHJvcHMubGlua3NUbyB9IGNzcz17IHsgdGV4dERlY29yYXRpb246IFwibm9uZVwifSB9PlxuXHRcdFx0XHQ8YSBzdHlsZT17IHt0ZXh0RGVjb3JhdGlvbjogXCJub25lXCJ9IH0+XG5cdFx0XHRcdFx0PGRpdj5cblx0XHRcdFx0XHRcdDxpbWcgc3JjPXsgcHJvcHMuaWNvbiB9IGNzcz17IHN1Yk5hdmJhckljb24gfS8+XG5cdFx0XHRcdFx0XHQ8cCBjc3M9eyBzdWJOYXZiYXJJdGVtTmFtZSB9PnsgcHJvcHMubmFtZSB9PC9wPlxuXHRcdFx0XHRcdDwvZGl2PlxuXHRcdFx0XHQ8L2E+XG5cdFx0XHQ8L0xpbms+XG5cdFx0PC9kaXY+XG5cdClcbn1cblxuZXhwb3J0IGRlZmF1bHQgU3VibmF2YmFySXRlbTsiXX0= */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+};
+
+var _ref =  false ? undefined : {
+  name: "1a0ly1q-SubnavbarItem",
+  styles: "text-decoration:none;;label:SubnavbarItem;",
+  map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYXJxdWlza3VydC9EZXZlbG9wZXIvcHJvamVjdGFsaWNlL2NvbXBvbmVudHMvU3VibmF2YmFySXRlbS50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBbUNnQyIsImZpbGUiOiIvVXNlcnMvbWFycXVpc2t1cnQvRGV2ZWxvcGVyL3Byb2plY3RhbGljZS9jb21wb25lbnRzL1N1Ym5hdmJhckl0ZW0udHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IEZDIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IExpbmsgZnJvbSBcIm5leHQvbGlua1wiO1xuXG4vKiogQGpzeCBqc3ggKi9cbmltcG9ydCB7IGNzcywganN4IH0gZnJvbSAnQGVtb3Rpb24vY29yZSc7XG5cbmludGVyZmFjZSBTdWJuYXZiYXJJdGVtUHJvcHMge1xuXHRpY29uOiBzdHJpbmdcblx0bmFtZTogc3RyaW5nXG5cdGxpbmtzVG86IHN0cmluZ1xufVxuXG5jb25zdCBzdWJOYXZiYXJJdGVtTmFtZSA9IGNzcyh7XG5cdHRleHREZWNvcmF0aW9uOiBcIm5vbmVcIixcblx0Y29sb3I6IFwiIzMzM1wiLFxuXHRmb250V2VpZ2h0OiA3MDAsXG5cdGZvbnRTaXplOiBcIjAuNzVlbVwiLFxuXHRtYXJnaW5Ub3A6IDAsXG5cdHBhZGRpbmdUb3A6IDAsXG5cdHBvc2l0aW9uOiBcInJlbGF0aXZlXCIsXG5cdGJvdHRvbTogOCxcbn0pXG5cbmNvbnN0IHN1Yk5hdmJhckljb24gPSBjc3Moe1xuXHRwb3NpdGlvbjogXCJyZWxhdGl2ZVwiLFxuXHR0b3A6IDgsXG5cdGhlaWdodDogNDgsXG5cdHdpZHRoOiBcImF1dG9cIixcblx0cGFkZGluZ0JvdHRvbTogOCxcblx0bWFyZ2luQm90dG9tOiAwXG59KVxuXG5jb25zdCBTdWJuYXZiYXJJdGVtOiBGQzxTdWJuYXZiYXJJdGVtUHJvcHM+ID0gKHByb3BzKSA9PiB7XG5cdHJldHVybiAoXG5cdFx0PGRpdiBpZD1cInBhLXN1Ym5hdmJhci1pdGVtXCI+XG5cdFx0XHQ8TGluayBocmVmPXsgcHJvcHMubGlua3NUbyB9IGNzcz17IHsgdGV4dERlY29yYXRpb246IFwibm9uZVwifSB9PlxuXHRcdFx0XHQ8YSBzdHlsZT17IHt0ZXh0RGVjb3JhdGlvbjogXCJub25lXCJ9IH0+XG5cdFx0XHRcdFx0PGRpdj5cblx0XHRcdFx0XHRcdDxpbWcgc3JjPXsgcHJvcHMuaWNvbiB9IGNzcz17IHN1Yk5hdmJhckljb24gfS8+XG5cdFx0XHRcdFx0XHQ8cCBjc3M9eyBzdWJOYXZiYXJJdGVtTmFtZSB9PnsgcHJvcHMubmFtZSB9PC9wPlxuXHRcdFx0XHRcdDwvZGl2PlxuXHRcdFx0XHQ8L2E+XG5cdFx0XHQ8L0xpbms+XG5cdFx0PC9kaXY+XG5cdClcbn1cblxuZXhwb3J0IGRlZmF1bHQgU3VibmF2YmFySXRlbTsiXX0= */",
+  toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+};
+
+var SubnavbarItem = function SubnavbarItem(props) {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    id: "pa-subnavbar-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: props.linksTo,
+    css: _ref,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("a", {
+    style: {
+      textDecoration: "none"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("img", {
+    src: props.icon,
+    css: subNavbarIcon,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("p", {
+    css: subNavbarItemName,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, props.name)))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SubnavbarItem);
 
 /***/ }),
 
@@ -17581,21 +17754,21 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fprojectalice%2Fpages%2Findex.tsx!./":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fprojectalice%2Fpages%2Findex.tsx ***!
-  \**********************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmods&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fprojectalice%2Fpages%2Fmods%2Findex.tsx!./":
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmods&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fprojectalice%2Fpages%2Fmods%2Findex.tsx ***!
+  \*********************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var page = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/mods", function() {
+      var page = __webpack_require__(/*! ./pages/mods/index.tsx */ "./pages/mods/index.tsx")
       if(true) {
-        module.hot.accept(/*! ./pages/index.tsx */ "./pages/index.tsx", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.tsx */ "./pages/index.tsx")
-          next.router.update("/", updatedPage.default || updatedPage)
+        module.hot.accept(/*! ./pages/mods/index.tsx */ "./pages/mods/index.tsx", function() {
+          if(!next.router.components["/mods"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/mods/index.tsx */ "./pages/mods/index.tsx")
+          next.router.update("/mods", updatedPage.default || updatedPage)
         })
       }
       return { page: page.default || page }
@@ -21965,10 +22138,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.tsx":
-/*!*************************!*\
-  !*** ./pages/index.tsx ***!
-  \*************************/
+/***/ "./pages/mods/index.tsx":
+/*!******************************!*\
+  !*** ./pages/mods/index.tsx ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -21976,18 +22149,26 @@ module.exports = function(module) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.tsx");
-/* harmony import */ var _components_FrontpageHero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/FrontpageHero */ "./components/FrontpageHero.tsx");
-/* harmony import */ var _components_BasicCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/BasicCard */ "./components/BasicCard.tsx");
-/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
-/* harmony import */ var _utils_commonStyles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/commonStyles */ "./utils/commonStyles.tsx");
-/* harmony import */ var _assets_mods_forgotten_forgotten_hero_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../assets/mods/forgotten/forgotten-hero.png */ "./assets/mods/forgotten/forgotten-hero.png");
-/* harmony import */ var _assets_mods_forgotten_forgotten_hero_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_mods_forgotten_forgotten_hero_png__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _assets_mods_tar_tar_bg_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../assets/mods/tar/tar-bg.png */ "./assets/mods/tar/tar-bg.png");
-/* harmony import */ var _assets_mods_tar_tar_bg_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_mods_tar_tar_bg_png__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _assets_aliceos_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../assets/aliceos.jpg */ "./assets/aliceos.jpg");
-/* harmony import */ var _assets_aliceos_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_aliceos_jpg__WEBPACK_IMPORTED_MODULE_8__);
-var _jsxFileName = "/Users/marquiskurt/Developer/projectalice/pages/index.tsx";
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Layout */ "./components/Layout.tsx");
+/* harmony import */ var _components_FrontpageHero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/FrontpageHero */ "./components/FrontpageHero.tsx");
+/* harmony import */ var _components_Subnavbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/Subnavbar */ "./components/Subnavbar.tsx");
+/* harmony import */ var _components_SubnavbarItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/SubnavbarItem */ "./components/SubnavbarItem.tsx");
+/* harmony import */ var _components_BasicCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/BasicCard */ "./components/BasicCard.tsx");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @emotion/core */ "./node_modules/@emotion/core/dist/core.browser.esm.js");
+/* harmony import */ var _utils_commonStyles__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../utils/commonStyles */ "./utils/commonStyles.tsx");
+/* harmony import */ var _assets_mods_forgotten_forgotten_hero_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/mods/forgotten/forgotten-hero.png */ "./assets/mods/forgotten/forgotten-hero.png");
+/* harmony import */ var _assets_mods_forgotten_forgotten_hero_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_mods_forgotten_forgotten_hero_png__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _assets_mods_tar_tar_logo_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/mods/tar/tar-logo.png */ "./assets/mods/tar/tar-logo.png");
+/* harmony import */ var _assets_mods_tar_tar_logo_png__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_assets_mods_tar_tar_logo_png__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _assets_mods_forgotten_forgotten_logo_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/mods/forgotten/forgotten-logo.png */ "./assets/mods/forgotten/forgotten-logo.png");
+/* harmony import */ var _assets_mods_forgotten_forgotten_logo_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_assets_mods_forgotten_forgotten_logo_png__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _assets_mods_tar_tar_bg_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/mods/tar/tar-bg.png */ "./assets/mods/tar/tar-bg.png");
+/* harmony import */ var _assets_mods_tar_tar_bg_png__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_assets_mods_tar_tar_bg_png__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _assets_policies_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/policies.jpg */ "./assets/policies.jpg");
+/* harmony import */ var _assets_policies_jpg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_assets_policies_jpg__WEBPACK_IMPORTED_MODULE_12__);
+var _jsxFileName = "/Users/marquiskurt/Developer/projectalice/pages/mods/index.tsx";
+
+
 
 
 
@@ -22000,69 +22181,95 @@ var _jsxFileName = "/Users/marquiskurt/Developer/projectalice/pages/index.tsx";
 
 
 
-var IndexPage = function IndexPage() {
-  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: "Home",
+
+
+var ModsLandingPage = function ModsLandingPage() {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    title: "Mods",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 23
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components_FrontpageHero__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "AliceOS Prospect Park. Now calling your name.",
-    subtitle: "AliceOS Prospect Park is bringing new features and updates to the table. With a brand new Desktop and other smaller improvements, you'll fall in love with AliceOS all over again.",
-    callToActionText: "Upgrade now",
-    callToActionLink: "/aliceos",
-    backgroundImageLocation: _assets_aliceos_jpg__WEBPACK_IMPORTED_MODULE_8___default.a,
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_Subnavbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 24
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("div", {
-    css: _utils_commonStyles__WEBPACK_IMPORTED_MODULE_5__["pageContentStyles"],
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_SubnavbarItem__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: "The Angel Returns",
+    icon: _assets_mods_tar_tar_logo_png__WEBPACK_IMPORTED_MODULE_9___default.a,
+    linksTo: "/mods/the-angel-returns",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_SubnavbarItem__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    name: "Forgotten",
+    icon: _assets_mods_forgotten_forgotten_logo_png__WEBPACK_IMPORTED_MODULE_10___default.a,
+    linksTo: "/mods/forgotten",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])("div", {
-    css: _utils_commonStyles__WEBPACK_IMPORTED_MODULE_5__["pageGridContainer"],
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components_BasicCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Forgotten. And deleted.",
-    cardDescription: "The new chapters of Forgotten bring suspense, surprise, and horror to the table in a whole new way.",
-    color: "#fafafa",
-    image: _assets_mods_forgotten_forgotten_hero_png__WEBPACK_IMPORTED_MODULE_6___default.a,
-    link: "/mods/forgotten",
-    strictPadding: true,
-    noShadow: true,
+  })), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_FrontpageHero__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "Deleted. And forgotten.",
+    subtitle: "The new chapters of Forgotten bring suspense, surprise, and horror to the table in a whole new way.",
+    callToActionText: "Learn more",
+    callToActionLink: "/mods/forgotten",
+    backgroundImageLocation: _assets_mods_forgotten_forgotten_hero_png__WEBPACK_IMPORTED_MODULE_8___default.a,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
-  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_components_BasicCard__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Doki Doki: The Angel Returns",
-    cardDescription: "Will you capture her inky heart?",
-    color: "#fafafa",
-    image: _assets_mods_tar_tar_bg_png__WEBPACK_IMPORTED_MODULE_7___default.a,
-    link: "/mods/the-angel-returns",
-    strictPadding: true,
-    noShadow: true,
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("div", {
+    css: _utils_commonStyles__WEBPACK_IMPORTED_MODULE_7__["pageContentStyles"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])("div", {
+    css: _utils_commonStyles__WEBPACK_IMPORTED_MODULE_7__["pageGridContainer"],
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36
     },
     __self: this
+  }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_BasicCard__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    title: "The Angel Returns. Now up to you.",
+    cardDescription: "Our original open-source mod, The Angel Returns, is ready for the modding community to explore and build upon as an open-ended, never-ending mod.",
+    color: "#fafafa",
+    image: _assets_mods_tar_tar_bg_png__WEBPACK_IMPORTED_MODULE_11___default.a,
+    link: "/mods/the-angel-returns",
+    strictPadding: true,
+    noShadow: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_6__["jsx"])(_components_BasicCard__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    title: "We take our content policies seriously on every release.",
+    cardDescription: "Learn more about the fan content policies that we strive to best abide by and how you can help us if there is a policy violation.",
+    color: "#fafafa",
+    image: _assets_policies_jpg__WEBPACK_IMPORTED_MODULE_12___default.a,
+    link: "/mods/policies",
+    strictPadding: true,
+    noShadow: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
   }))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (IndexPage);
+/* harmony default export */ __webpack_exports__["default"] = (ModsLandingPage);
 
 /***/ }),
 
@@ -22142,14 +22349,14 @@ Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["css"])(Object(_breakpoints__W
 
 /***/ }),
 
-/***/ 0:
-/*!**************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fprojectalice%2Fpages%2Findex.tsx ***!
-  \**************************************************************************************************************************************/
+/***/ 3:
+/*!*************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fmods&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fprojectalice%2Fpages%2Fmods%2Findex.tsx ***!
+  \*************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fprojectalice%2Fpages%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fprojectalice%2Fpages%2Findex.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fmods&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fprojectalice%2Fpages%2Fmods%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fmods&absolutePagePath=%2FUsers%2Fmarquiskurt%2FDeveloper%2Fprojectalice%2Fpages%2Fmods%2Findex.tsx!./");
 
 
 /***/ }),
@@ -22165,5 +22372,5 @@ module.exports = dll_215db7a4612148c018a1;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=index.js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=mods.js.map

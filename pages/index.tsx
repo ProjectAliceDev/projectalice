@@ -19,7 +19,7 @@ const IndexPage: NextPage = () => {
       <FrontpageHero
         title="AliceOS Prospect Park. Now calling your name."
         subtitle="AliceOS Prospect Park is bringing new features and updates to the table. With a brand new Desktop and other smaller improvements, you'll fall in love with AliceOS all over again."
-        callToActionText="Learn more"
+        callToActionText="Upgrade now"
         callToActionLink="/aliceos"
         backgroundImageLocation={ heroBg }
       />
